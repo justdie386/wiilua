@@ -197,6 +197,7 @@ end\"",
         "xmake check",
         "xmake check",
         "xmake check",
+        "xmake check",
         "xmake check"
     }
 }
