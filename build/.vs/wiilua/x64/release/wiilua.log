@@ -1,5 +1,0 @@
-﻿  $xmake config -y  -P . -p windows -m release -a x64 -o "build"
-  checking for Microsoft Visual Studio (x64) version ... 2022
-  checking for Microsoft C/C++ Compiler (x64) version ... 19.37.32824
-  $xmake build -y  -P . -w "wiilua"
-  [100%]: build ok, spent 0.078s
