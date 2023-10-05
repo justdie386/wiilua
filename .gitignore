@@ -1,9 +1,13 @@
-include/
-lib/
-game/
-.xmake/
-build/
-.vs/
-.vscode/
-.cache/
-compile_commands.json
+# Ignore these directories and files
+./include
+./lib
+./game
+./.xmake
+./build
+./.vs
+./.vscode
+./.cache
+./compile_commands.json
+
+# Ignore hidden files and directories (optional)
+.*
