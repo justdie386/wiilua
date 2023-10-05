@@ -1,0 +1,6 @@
+[
+{
+  "directory": "c:\\Users\\justi\\OneDrive\\Bureau\\test",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Iinclude", "/EHsc", "/Fobuild\\.objs\\wiilua\\windows\\x64\\release\\src\\wiilua.c.obj", "src\\wiilua.c"],
+  "file": "src\\wiilua.c"
+}]

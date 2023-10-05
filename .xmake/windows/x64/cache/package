@@ -1,0 +1,25 @@
+{
+    wiiuse = {
+        version = "@default",
+        sysincludedirs = [[C:\Users\justi\AppData\Local\.xmake\packages\w\wiiuse\@default\8574311f4b544fa89a3d8c3ee79d1929\include]],
+        __requirestr = "wiiuse",
+        static = true,
+        __enabled = true,
+        linkdirs = [[C:\Users\justi\AppData\Local\.xmake\packages\w\wiiuse\@default\8574311f4b544fa89a3d8c3ee79d1929\lib]],
+        libfiles = [[C:\Users\justi\AppData\Local\.xmake\packages\w\wiiuse\@default\8574311f4b544fa89a3d8c3ee79d1929\lib\wiiuse.lib]],
+        syslinks = {
+            "ws2_32",
+            "Hid",
+            "Setupapi"
+        },
+        defines = "WIIUSE_STATIC",
+        installdir = [[C:\Users\justi\AppData\Local\.xmake\packages\w\wiiuse\@default\8574311f4b544fa89a3d8c3ee79d1929]],
+        envs = {
+            PATH = {
+                [[C:\Users\justi\AppData\Local\.xmake\packages\w\wiiuse\@default\8574311f4b544fa89a3d8c3ee79d1929\bin]],
+                [[C:\Users\justi\AppData\Local\.xmake\packages\c\cmake\3.26.4\4d23fc87455a4a1c819e093bd8456f0f\bin]]
+            }
+        },
+        links = "wiiuse"
+    }
+}

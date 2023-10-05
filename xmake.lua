@@ -1,0 +1,30 @@
+package("wiiuse")
+    set_homepage("github.com/wiiuse/wiiuse")
+    set_description("wii remote library for C")
+    add_urls("https://github.com/wiiuse/wiiuse.git")
+    add_deps("cmake")
+    add_syslinks("ws2_32", "Hid", "Setupapi")
+    on_load(function (package)
+      if not package:config("shared") then
+        package:add("defines", "WIIUSE_STATIC")
+      end
+    end)
+
+    on_install(function (package)
+        local configs = {}
+        table.insert(configs, "-DCMAKE_BUILD_TYPE=" .. (package:debug() and "Debug" or "Release"))
+        table.insert(configs, "-DBUILD_SHARED_LIBS=" .. (package:config("shared") and "ON" or "OFF"))
+        import("package.tools.cmake").install(package, configs)
+    end)
+
+    on_test(function (package)
+        assert(package:has_cfuncs("wiiuse_version", {includes = "wiiuse.h"}))
+    end)
+package_end()
+add_requires("wiiuse")
+target("wiilua")
+    add_packages("wiiuse")
+    set_kind("shared")
+    add_files("src/wiilua.c")
+    add_includedirs("include/")
+    add_links("wiiuse")

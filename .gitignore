@@ -1,0 +1,9 @@
+./include
+./lib
+./game
+./.xmake
+./build
+./.vs
+./.vscode
+./.cache
+./compile_commands.json

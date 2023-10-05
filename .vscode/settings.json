@@ -1,0 +1,11 @@
+{
+    "Lua.workspace.library": [
+        "C:/Users/justi/AppData/Roaming/VSCodium/User/globalStorage/sumneko.lua/addonManager/addons/xmake/module/library",
+        "C:/Users/justi/AppData/Roaming/VSCodium/User/globalStorage/sumneko.lua/addonManager/addons/love2d/module/library"
+    ],
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.runtime.special": {
+        "love.filesystem.load": "loadfile"
+    }
+}

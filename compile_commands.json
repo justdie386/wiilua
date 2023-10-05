@@ -1,0 +1,11 @@
+[
+{
+  "directory": "C:\\Users\\justi\\OneDrive\\Bureau\\test",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Iinclude", "/EHsc", "/Fobuild\\.objs\\wiilua\\windows\\x64\\release\\src\\wiilua.c.obj", "src\\wiilua.c", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt"],
+  "file": "src\\wiilua.c"
+},
+{
+  "directory": "C:\\Users\\justi\\OneDrive\\Bureau\\test",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Iinclude", "/EHsc", "/Fobuild\\.objs\\test\\windows\\x64\\release\\src\\exec.c.obj", "src\\exec.c", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt"],
+  "file": "src\\exec.c"
+}]
