@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <wiiuse.h>
+#include <stdbool.h>
 
-typedef BOOL bool;
 // all i did was make a simple wrapper around wiiuse so that luajit's ffi
 // doesn't need to handle the userdata being passed between wiiuse_poll and
 // the event functions and i made it return the button being pressed AND which
@@ -44,7 +44,6 @@ short any_wiimote_connected(wiimote **wm, int wiimotes) {
 struct wii_remote_info wii_remote(struct wiimote_t *wm,
                                   struct wii_remote_info *info) {
   info->button = wm->btns;
-  return *info;
   if (wm->exp.type == EXP_NUNCHUK || wm->exp.type == EXP_MOTION_PLUS_NUNCHUK) {
     struct nunchuk_t *nc = (nunchuk_t *)&wm->exp.nunchuk;
     info->nunchuck.roll = nc->orient.roll;

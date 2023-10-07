@@ -32,6 +32,8 @@ ffi.cdef [[
           int16_t yaw;
         } nunchuck;
       };
+    void Sleep(int ms);
+    int poll(struct pollfd *fds, unsigned long nfds, int timeout);
     typedef struct wiimote_t wiimote;
     short any_wiimote_connected(wiimote** wm, int wiimotes);
     wiimote **init(int MAX_WIIMOTES);
@@ -63,5 +65,8 @@ function wii:rumble(wiimotes, isok)
 end
 function wii:set_leds(wiimotes, led)
     self.wiilua.set_leds(wiimotes, led)
+end
+function wii.sleep(time)
+    ffi.C.Sleep(time*1000)
 end
 return wii
