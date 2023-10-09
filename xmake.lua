@@ -37,7 +37,7 @@ if is_plat("windows") then
 else
   target_name = "wiilua"
 end
-target(target_name)
+target("wiilua")
 add_options("setup")
 add_packages("wiiuse")
 set_kind("shared")
@@ -49,7 +49,11 @@ after_link(function(target)
       os.cp(tostring(file), "wiidev")
       break
     end
+    if is_plat("windows") then
+    os.cp("build/*/*/release/wiilua.dll", "wiidev")
+else  
     os.cp("build/*/*/release/libwiilua.*", "wiidev")
+end
     os.cp("wiiffi.lua", "wiidev")
     os.cp("main.lua", "wiidev")
     cprint('${bright blue}wiilua has been setup for you, open the wiidev folder and get started developing!')
