@@ -1,7 +1,15 @@
 Wii remote library to control things on the wii, example in the test folder, i'll make a file that shows every possible function soon enough.
 
+to get started
 
-You need the wiilua.dll/.so file and the wiiuse.dll/.so file in the same folder as the new_ffi script, i'll make a script to setup an environment with all those things soon, or maybe make it work with luarocks, i'll work on it i guess
+install xmake from xmake.io
+
+in the root of the directory run
+
+```
+xmake
+```
+simple isn't it?
 
 
-to build the wiilua project, install xmake from https://xmake.io and then run xmake in the same directory, it should install any dependencies that might be missing, if there is any sort of error whatsoever please let me know by opening an issue
+it'll create the wiidev folder, which will contain all the files you need to get started, the wiiffi.lua, a main.lua example folder and both the .dll/.so files  needed  to get started, you absolutely need those for it to work because wiiffi relies on wiilua which is a tiny bity wrapper around wiiuse so it is important that if you want to use wiilua outside of this folder, you also copy the two .dll/.so files or add them to somewhere in the LD_LIBRARY_PATH 
