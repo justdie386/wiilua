@@ -1,6 +1,6 @@
 SHOULD NOT USE THIS FOR NOW READ BELOW
 
-I plan to rewrite it in C or C++ instead of ffi because its inefficient the way it is currently done, but it is still very usable, just beware.
+Currently rewritting in 100% C++ to be compatible with lua 5.1 - 5.4 and to get rid of the need to have the wiiuse file too, but licensing reasons (wiiuse the tool i used to built this has a GPL  license so idk if this means you need to use the license i'll have to check stuff) 
 
 Wii remote library to control things on the wii, example in the test folder, i'll make a file that shows every possible function soon enough.
 
