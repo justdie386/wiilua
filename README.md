@@ -1,4 +1,5 @@
-SHOULD NOT USE THIS FOR NOW READ BELOW
+This shouldn't be used at the moment, here's why:
+I use luajit's ffi, yet i still need to make a library around the wiiuse library, because of some issue with userdata stuff, so you'd need 2 lib files and one lua file to get started, not practical indeed. The userdata issue should be fixable but i am not sure whetever i plan on doing it or not. It still does work tho, and def can be used, but its also incomplete atm, it can just tell you when butons are pressed and das it
 
 Currently rewritting in 100% C++ to be compatible with lua 5.1 - 5.4 and to get rid of the need to have the wiiuse file too, but licensing reasons (wiiuse the tool i used to built this has a GPL  license so idk if this means you need to use the license i'll have to check stuff) 
 
