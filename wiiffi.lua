@@ -1,5 +1,5 @@
 local wii = {
-    wiilua = 0,
+    wiilua = nil,
     keys = {
         ["arrow up"] = 0x0800,
         ["arrow down"] = 0x0400,
