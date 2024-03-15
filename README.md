@@ -1,3 +1,5 @@
+Don't use, this is an incomplete binding that i will never touch again, poorly written due to my lack of knowledge using the luajit ffi, it is very possible to make a proper one, but i just don't know how to use luajit's ffi properly just yet
+
 This shouldn't be used at the moment, here's why:
 I use luajit's ffi, yet i still need to make a library around the wiiuse library, because of some issue with userdata stuff, so you'd need 2 lib files and one lua file to get started, not practical indeed. The userdata issue should be fixable but i am not sure whetever i plan on doing it or not. It still does work tho, and def can be used, but its also incomplete atm, it can just tell you when butons are pressed and das it
 
